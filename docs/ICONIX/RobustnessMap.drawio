@@ -1,0 +1,179 @@
+<mxfile host="" modified="2020-06-18T00:08:33.143Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_5) AppleWebKit/537.36 (KHTML, like Gecko) Code/1.45.0 Chrome/78.0.3904.130 Electron/7.2.4 Safari/537.36" etag="Wi2qNdUV39iG5BRlXdYe" version="13.1.3">
+    <diagram id="6hGFLwfOUW9BJ-s0fimq" name="ログインv0.1">
+        <mxGraphModel dx="1918" dy="564" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+            <root>
+                <mxCell id="0"/>
+                <mxCell id="1" parent="0"/>
+                <mxCell id="2" value="Actor" style="shape=umlActor;verticalLabelPosition=bottom;labelBackgroundColor=#ffffff;verticalAlign=top;html=1;" vertex="1" parent="1">
+                    <mxGeometry x="-220" y="250" width="30" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="4" value="&lt;div style=&quot;color: rgb(212 , 212 , 212) ; background-color: rgb(30 , 30 , 30) ; font-family: &amp;#34;menlo&amp;#34; , &amp;#34;monaco&amp;#34; , &amp;#34;courier new&amp;#34; , monospace ; font-weight: normal ; font-size: 12px ; line-height: 18px&quot;&gt;&lt;div&gt;&lt;span style=&quot;color: #569cd6 ; font-weight: bold&quot;&gt;# ログインユースケース&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;color: #569cd6 ; font-weight: bold&quot;&gt;## 基本コース&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;color: #6796e6&quot;&gt;-&lt;/span&gt;&lt;span style=&quot;color: #d4d4d4&quot;&gt; ユーザはログイン画面にアクセスする。ユーザはアカウント名とパスワードを入力して、「ログイン」ボタンをクリックする。&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;color: #6796e6&quot;&gt;-&lt;/span&gt;&lt;span style=&quot;color: #d4d4d4&quot;&gt; システムはユーザ認証する。アカウント名とパスワードが正しければ、名言登録画面に遷移する。&lt;/span&gt;&lt;/div&gt;&lt;br&gt;&lt;div&gt;&lt;span style=&quot;color: #569cd6 ; font-weight: bold&quot;&gt;## 代替コース&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;color: #569cd6 ; font-weight: bold&quot;&gt;### ユーザが存在しない&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;color: #6796e6&quot;&gt;-&lt;/span&gt;&lt;span style=&quot;color: #d4d4d4&quot;&gt; システムはユーザが入力したアカウント名をDBで検索し、一致するアカウント名が存在しなかった場合は、「ユーザが存在しません」とエラーメッセージを表示する。&lt;/span&gt;&lt;/div&gt;&lt;br&gt;&lt;div&gt;&lt;span style=&quot;color: #569cd6 ; font-weight: bold&quot;&gt;### パスワードが誤っている&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;color: #6796e6&quot;&gt;-&lt;/span&gt;&lt;span style=&quot;color: #d4d4d4&quot;&gt; システムは、ユーザが入力したアカウントが存在した場合はパスワードを照合する。パスワードが誤っていた場合は、「パスワードが違います」とエラーメッセージを表示する。&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;" style="shape=note;whiteSpace=wrap;html=1;backgroundOutline=1;darkOpacity=0.05;align=left;" vertex="1" parent="1">
+                    <mxGeometry x="-220" y="20" width="1010" height="200" as="geometry"/>
+                </mxCell>
+                <mxCell id="7" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;exitPerimeter=0;" edge="1" parent="1" source="4" target="4">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="11" value="" style="group" vertex="1" connectable="0" parent="1">
+                    <mxGeometry x="10" y="240" width="100" height="100" as="geometry"/>
+                </mxCell>
+                <mxCell id="9" value="" style="shape=umlBoundary;whiteSpace=wrap;html=1;" vertex="1" parent="11">
+                    <mxGeometry width="100" height="80" as="geometry"/>
+                </mxCell>
+                <mxCell id="10" value="ログイン画面" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;" vertex="1" parent="11">
+                    <mxGeometry x="5" y="80" width="90" height="20" as="geometry"/>
+                </mxCell>
+                <mxCell id="24" value="" style="group" vertex="1" connectable="0" parent="1">
+                    <mxGeometry x="180" y="230" width="80" height="105" as="geometry"/>
+                </mxCell>
+                <mxCell id="22" value="" style="ellipse;shape=umlControl;whiteSpace=wrap;html=1;" vertex="1" parent="24">
+                    <mxGeometry width="70" height="80" as="geometry"/>
+                </mxCell>
+                <mxCell id="23" value="アカウントが&lt;br&gt;存在するか？" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;" vertex="1" parent="24">
+                    <mxGeometry x="-10" y="80" width="90" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="25" value="" style="endArrow=open;endFill=1;endSize=12;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="2" target="9">
+                    <mxGeometry width="160" relative="1" as="geometry">
+                        <mxPoint x="-190" y="350" as="sourcePoint"/>
+                        <mxPoint x="-30" y="350" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="26" value="アクセスして&lt;br&gt;アカウント名と&lt;br&gt;パスワードを入力して&lt;br&gt;「ログイン」ボタンを&lt;br&gt;クリックする" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="25">
+                    <mxGeometry x="-0.0875" y="-2" relative="1" as="geometry">
+                        <mxPoint as="offset"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="27" value="" style="endArrow=open;endFill=1;endSize=12;html=1;entryX=-0.043;entryY=0.625;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" target="22">
+                    <mxGeometry width="160" relative="1" as="geometry">
+                        <mxPoint x="115" y="280" as="sourcePoint"/>
+                        <mxPoint x="450" y="360" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="29" value="" style="group" vertex="1" connectable="0" parent="1">
+                    <mxGeometry x="334" y="230" width="80" height="105" as="geometry"/>
+                </mxCell>
+                <mxCell id="30" value="" style="ellipse;shape=umlControl;whiteSpace=wrap;html=1;" vertex="1" parent="29">
+                    <mxGeometry width="70" height="80" as="geometry"/>
+                </mxCell>
+                <mxCell id="31" value="パスワードは&lt;br&gt;正しいか？" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;" vertex="1" parent="29">
+                    <mxGeometry x="-10" y="80" width="90" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="32" value="" style="endArrow=open;endFill=1;endSize=12;html=1;entryX=0;entryY=0.625;entryDx=0;entryDy=0;entryPerimeter=0;exitX=1.043;exitY=0.638;exitDx=0;exitDy=0;exitPerimeter=0;" edge="1" parent="1" source="22" target="30">
+                    <mxGeometry width="160" relative="1" as="geometry">
+                        <mxPoint x="125" y="290" as="sourcePoint"/>
+                        <mxPoint x="246.98999999999978" y="290" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="33" value="はい" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="32">
+                    <mxGeometry x="-0.0866" y="1" relative="1" as="geometry">
+                        <mxPoint as="offset"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="35" value="" style="group" vertex="1" connectable="0" parent="1">
+                    <mxGeometry x="490" y="230" width="80" height="105" as="geometry"/>
+                </mxCell>
+                <mxCell id="36" value="" style="ellipse;shape=umlControl;whiteSpace=wrap;html=1;" vertex="1" parent="35">
+                    <mxGeometry width="70" height="80" as="geometry"/>
+                </mxCell>
+                <mxCell id="37" value="表示する" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;" vertex="1" parent="35">
+                    <mxGeometry x="5" y="80" width="60" height="20" as="geometry"/>
+                </mxCell>
+                <mxCell id="38" value="" style="endArrow=open;endFill=1;endSize=12;html=1;" edge="1" parent="1">
+                    <mxGeometry width="160" relative="1" as="geometry">
+                        <mxPoint x="409" y="277" as="sourcePoint"/>
+                        <mxPoint x="489" y="277" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="49" value="はい" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="38">
+                    <mxGeometry x="-0.15" y="1" relative="1" as="geometry">
+                        <mxPoint as="offset"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="39" value="" style="group" vertex="1" connectable="0" parent="1">
+                    <mxGeometry x="660" y="240" width="100" height="100" as="geometry"/>
+                </mxCell>
+                <mxCell id="40" value="" style="shape=umlBoundary;whiteSpace=wrap;html=1;" vertex="1" parent="39">
+                    <mxGeometry width="100" height="80" as="geometry"/>
+                </mxCell>
+                <mxCell id="41" value="名言登録画面" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;" vertex="1" parent="39">
+                    <mxGeometry x="5" y="80" width="90" height="20" as="geometry"/>
+                </mxCell>
+                <mxCell id="42" value="" style="endArrow=open;endFill=1;endSize=12;html=1;entryX=0;entryY=0.513;entryDx=0;entryDy=0;entryPerimeter=0;exitX=1.014;exitY=0.638;exitDx=0;exitDy=0;exitPerimeter=0;" edge="1" parent="1" source="36" target="40">
+                    <mxGeometry width="160" relative="1" as="geometry">
+                        <mxPoint x="419" y="287" as="sourcePoint"/>
+                        <mxPoint x="499" y="287" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="43" value="" style="group" vertex="1" connectable="0" parent="1">
+                    <mxGeometry x="180" y="410" width="80" height="105" as="geometry"/>
+                </mxCell>
+                <mxCell id="44" value="" style="ellipse;shape=umlControl;whiteSpace=wrap;html=1;" vertex="1" parent="43">
+                    <mxGeometry width="70" height="80" as="geometry"/>
+                </mxCell>
+                <mxCell id="45" value="表示する" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;" vertex="1" parent="43">
+                    <mxGeometry x="5" y="80" width="60" height="20" as="geometry"/>
+                </mxCell>
+                <mxCell id="46" value="" style="group" vertex="1" connectable="0" parent="1">
+                    <mxGeometry x="340" y="410" width="80" height="105" as="geometry"/>
+                </mxCell>
+                <mxCell id="47" value="" style="ellipse;shape=umlControl;whiteSpace=wrap;html=1;" vertex="1" parent="46">
+                    <mxGeometry width="70" height="80" as="geometry"/>
+                </mxCell>
+                <mxCell id="48" value="表示する" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;" vertex="1" parent="46">
+                    <mxGeometry x="5" y="80" width="60" height="20" as="geometry"/>
+                </mxCell>
+                <mxCell id="50" value="" style="endArrow=open;endFill=1;endSize=12;html=1;exitX=0.5;exitY=1.1;exitDx=0;exitDy=0;exitPerimeter=0;" edge="1" parent="1" source="31">
+                    <mxGeometry width="160" relative="1" as="geometry">
+                        <mxPoint x="419" y="287" as="sourcePoint"/>
+                        <mxPoint x="370" y="410" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="51" value="いいえ" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="50">
+                    <mxGeometry x="-0.15" y="1" relative="1" as="geometry">
+                        <mxPoint as="offset"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="52" value="" style="endArrow=open;endFill=1;endSize=12;html=1;exitX=0.5;exitY=1.1;exitDx=0;exitDy=0;exitPerimeter=0;" edge="1" parent="1">
+                    <mxGeometry width="160" relative="1" as="geometry">
+                        <mxPoint x="210" y="340" as="sourcePoint"/>
+                        <mxPoint x="211" y="412" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="53" value="いいえ" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="52">
+                    <mxGeometry x="-0.15" y="1" relative="1" as="geometry">
+                        <mxPoint as="offset"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="54" value="" style="group" vertex="1" connectable="0" parent="1">
+                    <mxGeometry x="160" y="560" width="135" height="130" as="geometry"/>
+                </mxCell>
+                <mxCell id="55" value="" style="shape=umlBoundary;whiteSpace=wrap;html=1;" vertex="1" parent="54">
+                    <mxGeometry width="100" height="80" as="geometry"/>
+                </mxCell>
+                <mxCell id="56" value="「ユーザが存在しません」&lt;br&gt;エラーメッセージつき&lt;br&gt;ログイン画面" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;" vertex="1" parent="54">
+                    <mxGeometry x="-30" y="80" width="160" height="50" as="geometry"/>
+                </mxCell>
+                <mxCell id="59" value="" style="group" vertex="1" connectable="0" parent="1">
+                    <mxGeometry x="320" y="560" width="135" height="130" as="geometry"/>
+                </mxCell>
+                <mxCell id="60" value="" style="shape=umlBoundary;whiteSpace=wrap;html=1;" vertex="1" parent="59">
+                    <mxGeometry width="100" height="80" as="geometry"/>
+                </mxCell>
+                <mxCell id="61" value="「パスワードが違います」&lt;br&gt;エラーメッセージつき&lt;br&gt;ログイン画面" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;" vertex="1" parent="59">
+                    <mxGeometry x="-30" y="80" width="160" height="50" as="geometry"/>
+                </mxCell>
+                <mxCell id="62" value="" style="endArrow=open;endFill=1;endSize=12;html=1;exitX=0.5;exitY=1.1;exitDx=0;exitDy=0;exitPerimeter=0;" edge="1" parent="1">
+                    <mxGeometry width="160" relative="1" as="geometry">
+                        <mxPoint x="373.41" y="510" as="sourcePoint"/>
+                        <mxPoint x="374.41" y="555" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="65" value="" style="endArrow=open;endFill=1;endSize=12;html=1;exitX=0.5;exitY=1.1;exitDx=0;exitDy=0;exitPerimeter=0;" edge="1" parent="1">
+                    <mxGeometry width="160" relative="1" as="geometry">
+                        <mxPoint x="209.9999999999994" y="510" as="sourcePoint"/>
+                        <mxPoint x="210.99999999999986" y="555" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+            </root>
+        </mxGraphModel>
+    </diagram>
+</mxfile>
