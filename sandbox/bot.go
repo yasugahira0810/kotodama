@@ -11,7 +11,7 @@ import (
 func main() {
 
 	// Json読み込み
-	raw, error := ioutil.ReadFile("../TwitterCredentials.json")
+	raw, error := ioutil.ReadFile("TwitterCredentials.json")
 	if error != nil {
 		fmt.Println(error.Error())
 		return

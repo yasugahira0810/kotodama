@@ -1,4 +1,4 @@
-module kotodama/sandbox
+module kotodama
 
 go 1.13
 
