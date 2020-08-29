@@ -1,1 +1,3 @@
-JIRAプロジェクト作る
+[x] JIRAプロジェクト作る
+[] ローカルでKubernetes動かす
+[] ローカルにSpanner Emulatorインストール
