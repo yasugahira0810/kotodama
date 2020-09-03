@@ -1,5 +1,5 @@
 - [x] JIRAプロジェクト作る
 - [x] ローカルでKubernetes動かす
 - [x] ローカルにSpanner Emulatorインストール
-- [ ] ER図作る
+- [x] ER図作る
 - [ ] Spanner Emulatorにテーブル作る（インタリーブ使う）
